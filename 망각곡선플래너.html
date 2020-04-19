@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>manggak planer</title>
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="box">
+            &nbsp
+            <button class="myButton"><img src="images/home.png" width=100% alt="home"></button>
+            <button class="myButton"><img src="images/alram.png" width=100%  alt="alram"></button>
+            <button class="myButton"><img src="images/calendar.png" width=100%  alt="calendar"></button>
+            &nbsp 사용자명 &nbsp Never forget planner
+            
+        </div>
+        <h2>
+            <script type="text/javascript">
+                let today = new Date();   
+                let year = today.getFullYear(); 
+                let month = today.getMonth() + 1; 
+                let date = today.getDate(); 
+                let day = today.getDay(); 
+
+                document.write(year + '년 ' + month + '월 ' + date + '일 ')
+            </script> 
+            &nbsp플래너명
+        </h2>
+        <div class="box1">
+            <p>학습 할 내용</p>
+            <ul id="todo-list"></ul>
+            <div id="todo-input">
+                <form>
+                    <input type="text" id="input-todo-title" placeholder="학습 내용 추가"/>
+                    <button type="submit">추가</button>
+                </form>
+            </div>
+        </div>
+        <div class="box2">
+            <p>복습 할 내용</p>
+            <ul id="completed-list"></ul>
+            <div id="todo-input">
+                <form>
+                    <input type="text" id="input-todo-title" placeholder="복습 내용 추가"/>
+                    <button type="submit">추가</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+
+        // 곧바로 현재 페이지 주소 출력
+        document.writeln(location.href);
+        
+        
+        // 변수에 넣어서 출력
+        var s = location.href;
+        document.writeln(s);
+        
+    </script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
